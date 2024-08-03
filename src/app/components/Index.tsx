@@ -22,7 +22,7 @@ const Index = () => {
           </div>
         </Collapse>
         <Button
-          className="chat-btn col-1"
+          className="chat-btn"
           variant="none"
           onClick={() => setOpen(!open)}
           aria-expanded={open}

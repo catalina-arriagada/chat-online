@@ -5,6 +5,7 @@
     cursor: pointer;
   }
   .chat-image {
+    width: 3em !important;
     transition: .2s linear;
   }
   .chat-image:hover {
