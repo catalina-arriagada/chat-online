@@ -1,283 +1,289 @@
- .btn {
-    border: transparent !important;
+.btn {
+  border: transparent !important;
+}
+.chat-btn {
+  cursor: pointer;
+}
+.chat-image {
+  transition: 0.2s linear;
+}
+.chat-image:hover {
+  transform: scale(1.2);
+}
+.img-box {
+  padding: 0 !important;
+}
+div .card {
+  border-color: transparent;
+  width: 0px;
+  height: 0px;
+}
+/*spinner*/
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  animation-fill-mode: both;
+  animation: bblFadInOut 1.2s infinite ease-in-out;
+  margin-left: 2rem;
+}
+.loader {
+  color: #3801ff;
+  font-size: 4px;
+  position: relative;
+  text-indent: -9999em;
+  transform: translateZ(0);
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+
+@keyframes bblFadInOut {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
   }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+/*end spinner*/
+@media only screen and (min-width: 200px) {
   .chat-btn {
-    cursor: pointer;
+    width: 1%;
+    position: absolute;
+    right: 50px;
+    top: 500px;
+    padding-right: 0 !important;
   }
   .chat-image {
-    width: 3em !important;
-    transition: .2s linear;
-  }
-  .chat-image:hover {
-    transform: scale(1.2); 
-  }
-  .img-box {
-    padding: 0 !important;
-  }
-  div .card {
-   border-color: transparent;
-   width: 0px;
-   height: 0px;
-  }
-  /*spinner*/
-  .loader, .loader:before, .loader:after {
-    border-radius: 50%;
-    width: 1em;
-    height: 1em;
-    animation-fill-mode: both;
-    animation: bblFadInOut 1.2s infinite ease-in-out;
-    margin-left: 2rem;
-  }
-  .loader {
-    color: #3801ff;
-    font-size: 4px;
-    position: relative;
-    text-indent: -9999em;
-    transform: translateZ(0);
-    animation-delay: -0.16s;
-  }
-  .loader:before,
-  .loader:after {
-    content: '';
+    width: 2em !important;
     position: absolute;
-    top: 0;
+    padding-right: 0 !important;
   }
-  .loader:before {
-    left: -3.5em;
-    animation-delay: -0.32s;
+  .inner-header-img {
+    height: 10vh;
   }
-  .loader:after {
-    left: 3.5em;
+  .row .row-cols-4 {
+    width: 70%;
   }
-  
-  @keyframes bblFadInOut {
-    0%, 80%, 100% { box-shadow: 0 2.5em 0 -1.3em }
-    40% { box-shadow: 0 2.5em 0 0 }
+  .chat-div {
+    padding: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin-bottom: 20rem !important;
   }
-  /*end spinner*/
-  @media only screen and (min-width: 200px) {
-    .chat-btn {
-      width: 1%;
-      position: absolute; 
-      right: 50px; 
-      top: 500px;
-      padding-right: 0 !important;
-    } 
-     .chat-image {
-      width: 120%;
-      position: absolute; 
-      padding-right: 0 !important;
-    }  
-    .inner-header-img{
-      height: 10vh;
-    }
-    .row .row-cols-4 {
-      width: 70%;
-    }
-    .chat-div {
-      padding: 0 !important;
-      width: 0 !important;
-      height: 0 !important;
-      margin-bottom: 20rem !important;
-    }
-    .collapse-card{
-      border: none;
-    }
-    .card {
-      position: relative;
-      right: 31svh;
-      top: 10rem;
-    }
-    .box {
-      min-width: 12rem;
-      border: 1px solid black;
-      background-color: #FFFFFF;
-    }
-    .scrollable {
-      font-size: 12px;
-      display: flex;
-      height: 8rem;/* Altura fija */
-      overflow-y: auto; /* Desplazamiento vertical */
-    }
-    .inner-header-img{
-      max-width: 100%;
-      width: 259.094px;
-    }
-    .chat-bar{
-      font-size: 12px;
-      display: flex;
-    }
-    .chat-bar .col{
-      width: 10px !important;
-    }
-    .chat-bar .col-auto{
-      width: 41.8px !important;
-      margin-top: 2px;
-    }
-    .chat-bar input {
-      width: 7rem;
-    }
-    .chat-bar btn {
-      padding-block: 1px;
-      padding-inline: 4px;
-      border: 1px solid black;
-    }
+  .collapse-card {
+    border: none;
   }
-  @media only screen and (min-width: 340px) {
-    .card {
-      right: 24svh;
-      top: 9rem;
-    }
+  .card {
+    position: relative;
+    right: 31svh;
+    top: 10rem;
   }
-  @media only screen and (min-width: 350px) {
-    .card {
-      right: 32svh;
-      top: 10.5rem;
-    }
+  .box {
+    min-width: 12rem;
+    border: 1px solid black;
+    background-color: #ffffff;
   }
-  @media only screen and (min-width: 370px) {
-    .card {
-      right: 32svh;
-    }
+  .scrollable {
+    font-size: 12px;
+    display: flex;
+    height: 8rem; /* Altura fija */
+    overflow-y: auto; /* Desplazamiento vertical */
   }
-  @media only screen and (min-width: 385px) {
-    .card {
-      right: 25svh;
-      top: 9.5rem;
-    }
+  .inner-header-img {
+    max-width: 100%;
+    width: 259.094px;
   }
-  @media only screen and (min-width: 400px) {
-    .row .row-cols-4 {
-      width: 70%;
-    }
-    .card {
-      font-size: 14px;
-      right: 13rem;
-      top: 8.6rem;
-    }
+  .chat-bar {
+    font-size: 12px;
+    display: flex;
   }
-  @media only screen and (min-width: 500px) {
-      .chat-image {
-        width: 90%;
-      }   
-      .collapse-card{
-        left: 10svh;
-      }
-      .row .row-cols-4 {
-        width: 50%;
-      }
-      .card {
-        font-size: 16px;
-        right: 30svh;
-        top: 8rem;
-      }
-      .scrollable {
-        width: 15rem;
-        height: 8rem;
-      }
-      .inner-header-img{
-        height: 15vh;
-      }
+  .chat-bar .col {
+    width: 10px !important;
   }
-  @media only screen and (min-width: 620px) {
-    .card {
-      right: 48svh;
-      top: 11rem;
-    }
+  .chat-bar .col-auto {
+    width: 41.8px !important;
+    margin-top: 2px;
   }
-  @media only screen and (min-width: 768px) {
-    .chat-image {
-      width: 70%;
-    }   
-    .row .row-cols-4 {
-      width: 35%;
-    }
-    .card {
-      font-size: 18px;
-      right: 20svh;
-      top: 8.5rem;
-    }
-    .scrollable {
-      width: 17rem;
-      height: 8rem;
-    }
-    .inner-header-img{
-      width: 270px;
-      height: 6rem;
-    }
+  .chat-bar input {
+    width: 7rem;
   }
-  @media only screen and (min-width: 800px) {
-    .card {
-      right: 14svh;
-      top: 8rem;
-    }
+  .chat-bar btn {
+    padding-block: 1px;
+    padding-inline: 4px;
+    border: 1px solid black;
   }
-  @media only screen and (min-width: 850px) {
-    .card {
-      right: 12.5svh;
-    }
+}
+@media only screen and (min-width: 340px) {
+  .card {
+    right: 24svh;
+    top: 9rem;
   }
-  @media only screen and (min-width: 900px) {
-    .card {
-      right: 9svh;
-      top: 7.6rem;
-    }
+}
+@media only screen and (min-width: 350px) {
+  .card {
+    right: 32svh;
+    top: 10.5rem;
   }
-  @media only screen and (min-width: 992px) {
-    .chat-image {
-      width: 60%;
-    }   
-    .row .row-cols-4 {
-      width: 26%;
-    }
-    .card {
-      right: 15svh;
-      top: 7.2rem;
-    }
-    .inner-header-img{
-      height: 8vh;
-    }
-  
+}
+@media only screen and (min-width: 370px) {
+  .card {
+    right: 32svh;
   }
-  @media only screen and (min-width: 1200px) {
-    .chat-image {
-      width: 50%;
-    }   
-    .row .row-cols-4 {
-      width: 20%;
-    }
-    .card {
-      font-size: 22px;
-      right: 40svh;
-      top: 3rem;
-    }
-    .box {
-      min-width: 20rem;
-    }
-    .scrollable {
-      width: 23rem;
-      height: 10rem;
-    }
-    .chat-bar .col-auto{
-      margin-top: 6px;
-    }
-    .chat-bar input {
-      width: 15rem;
-      padding: 4px;
-    }
-    .chat-bar btn{
-      padding: 3px;
-    }
-    .inner-header-img{
-      width: 366px;
-      height: 20vh;
-    }
+}
+@media only screen and (min-width: 385px) {
+  .card {
+    right: 25svh;
+    top: 9.5rem;
   }
-  @media only screen and (min-width: 1400px) {
-    .card {
-      right: 35svh;
-    }
-    .inner-header-img{
-      height: 15vh;
-    }
+}
+@media only screen and (min-width: 400px) {
+  .row .row-cols-4 {
+    width: 4em !important;
   }
+  .card {
+    font-size: 14px;
+    right: 13rem;
+    top: 8.6rem;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .chat-image {
+    width: 4em !important;
+  }
+  .collapse-card {
+    left: 10svh;
+  }
+  .row .row-cols-4 {
+    width: 50%;
+  }
+  .card {
+    font-size: 16px;
+    right: 30svh;
+    top: 8rem;
+  }
+  .scrollable {
+    width: 15rem;
+    height: 8rem;
+  }
+  .inner-header-img {
+    height: 15vh;
+  }
+}
+@media only screen and (min-width: 620px) {
+  .card {
+    right: 48svh;
+    top: 11rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .chat-image {
+    width: 3em !important;
+  }
+  .row .row-cols-4 {
+    width: 1em !important;
+  }
+  .card {
+    font-size: 18px;
+    right: 20svh;
+    top: 8.5rem;
+  }
+  .scrollable {
+    width: 17rem;
+    height: 8rem;
+  }
+  .inner-header-img {
+    width: 270px;
+    height: 6rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .card {
+    right: 14svh;
+    top: 8rem;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .card {
+    right: 12.5svh;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .card {
+    right: 9svh;
+    top: 7.6rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .chat-image {
+    width: 2em !important;
+  }
+  .row .row-cols-4 {
+    width: 2.6em !important;
+  }
+  .card {
+    right: 15svh;
+    top: 7.2rem;
+  }
+  .inner-header-img {
+    height: 8vh;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .chat-image {
+    width: 3em !important;
+  }
+  .row .row-cols-4 {
+    width: 2em !important;
+  }
+  .card {
+    font-size: 22px;
+    right: 40svh;
+    top: 3rem;
+  }
+  .box {
+    min-width: 20rem;
+  }
+  .scrollable {
+    width: 23rem;
+    height: 10rem;
+  }
+  .chat-bar .col-auto {
+    margin-top: 6px;
+  }
+  .chat-bar input {
+    width: 15rem;
+    padding: 4px;
+  }
+  .chat-bar btn {
+    padding: 3px;
+  }
+  .inner-header-img {
+    width: 366px;
+    height: 20vh;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .card {
+    right: 35svh;
+  }
+  .inner-header-img {
+    height: 15vh;
+  }
+}

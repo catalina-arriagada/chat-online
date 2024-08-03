@@ -12,7 +12,9 @@ const Index = () => {
 
   return (
     <div className="row p-4">
-      <h2 className="display-6 text-center">Asistente Virtual</h2>
+      <h2 className="display-6 text-center">Informacion</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, in nulla consectetur fugit minus veritatis facilis, eius autem, nostrum beatae libero facere commodi. Explicabo, nesciunt aliquid eos voluptate perferendis odio.</p>
+      <h3 className="display-6 text-center">Tienes alguna duda? abre el chat virtual:</h3>
       <div className="chat-div">
         <Collapse in={open}>
           <div className="collapse-card">
